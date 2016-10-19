@@ -6,7 +6,7 @@ RUN apt-get -q update
 
 RUN apt-get -q install -y -o Dpkg::Options::="--force-confnew"  --no-install-recommends \
     php5 php5-cli php5-curl php5-mysql php5-sqlite php5-mcrypt php-pear \
-    php5-fpm php5-json \
+    php5-fpm php5-json php5-memcache php5-memcached \
     git curl
 
 RUN apt-get -q clean -y \
